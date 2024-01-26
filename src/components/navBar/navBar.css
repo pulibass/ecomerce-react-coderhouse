@@ -1,0 +1,37 @@
+.nav-container {
+    background: #232526;
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    background: linear-gradient(to right, #414345, #232526);
+}
+
+.logo {
+    width: 40%;
+}
+
+.imagen-logo {
+    width: 100px;
+    height: 100px;
+}
+
+.nav-item button {
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav-item button:hover {
+    text-decoration: overline;
+    color: #FFD43B;
+}
+
+.menu-burger{
+    display: none;
+}
+
+@media screen and (max-width: 991px) {
+   .cart  .menu-burger {
+        display: block;
+    }
+
+
+}
