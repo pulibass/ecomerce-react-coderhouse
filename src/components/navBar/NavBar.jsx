@@ -7,6 +7,8 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 
 
 const NavBar = () => {
+
+    
     return (
         <div className="nav-container">
             <nav className="navbar navbar-expand-lg navbar-light ">
