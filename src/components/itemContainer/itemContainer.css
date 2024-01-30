@@ -1,0 +1,75 @@
+.card {
+    border: hidden;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 10px 24px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 10px 24px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 10px 24px -6px rgba(0, 0, 0, 0.75);
+    font-family: sans-serif;
+}
+
+.imagen-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin: auto;
+    padding: 15px;
+}
+
+.imagen-container img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.detalles-container {
+    margin-top: 20px;
+    padding-left: 15px;
+}
+
+.detalles-container h3 {
+font-weight: bold;
+text-transform: uppercase;
+}
+.detalles-container p {
+    font-weight: 700;
+}
+
+.precio {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.btnVerMas {
+    background: #FFCC18;
+    background-image: -webkit-linear-gradient(top, #FFCC18, #deaf14);
+    background-image: -moz-linear-gradient(top, #FFCC18, #deaf14);
+    background-image: -ms-linear-gradient(top, #FFCC18, #deaf14);
+    background-image: -o-linear-gradient(top, #FFCC18, #deaf14);
+    background-image: linear-gradient(to bottom, #FFCC18, #deaf14);
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: hidden;
+    font-weight: bold;
+}
+
+.btnVerMas:hover {
+    background: #deaf14;
+    background-image: -webkit-linear-gradient(top, #deaf14, #FFCC18);
+    background-image: -moz-linear-gradient(top, #deaf14, #FFCC18);
+    background-image: -ms-linear-gradient(top, #deaf14, #FFCC18);
+    background-image: -o-linear-gradient(top, #deaf14, #FFCC18);
+    background-image: linear-gradient(to bottom, #deaf14, #FFCC18);
+    text-decoration: none;
+}

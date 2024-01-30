@@ -3,6 +3,7 @@ import NavBar from './components/navBar/NavBar'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemListContainer from './components/itemListContainer/ItemListContainer';
 import Banner from './assets/img-banner.png'
+import ItemContainer from './components/itemContainer/ItemContainer';
 
 function App() {
 
@@ -23,7 +24,7 @@ function App() {
 
       </main>
       <ItemListContainer mensaje={"Bienvenidos a ItemListContainer"} />
-
+    <ItemContainer />
     </>
   )
 }
