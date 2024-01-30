@@ -2,17 +2,28 @@ import './styles/App.css';
 import NavBar from './components/navBar/NavBar'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemListContainer from './components/itemListContainer/ItemListContainer';
-
+import Banner from './assets/img-banner.png'
 
 function App() {
 
   return (
     <>
-     <NavBar />
-     <main>
-      <h1 className='d-flex justify-content-center text-bold mt-5 text-uppercase'>Apiterapia  Dejando Huellas</h1>
-      <ItemListContainer mensaje={"Bienvenidos a ItemListContainer"}/>
-     </main>
+      <NavBar />
+      <main>
+        <div className='containerBanner'>
+          <div className="textBanner">
+            <h1>Vive <span>Sano</span></h1>
+            <h2>Vive <span>Mejor</span></h2>
+            <p>Apiterapia Dejando Huellas</p>
+          </div>
+          <div className='container-fluid imgBanner'>
+            <img className='' src={Banner} alt="banner" />
+          </div>
+        </div>
+
+      </main>
+      <ItemListContainer mensaje={"Bienvenidos a ItemListContainer"} />
+
     </>
   )
 }

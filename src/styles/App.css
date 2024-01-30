@@ -1,5 +1,134 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.containerBanner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F2994A;
+  background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);
+  background: linear-gradient(to right, #F2C94C, #F2994A);
+  border-radius: 0px 0px 300px 300px;
+
+}
+
+.textBanner {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px;
+}
+
+.textBanner h1 {
+  text-align: left;
+  font-size: 70px;
+  width: 100%;
+  font-weight: 200;
+  display: flex;
+  justify-content: center;
+}
+
+.textBanner h1 span {
+  font-weight: bold;
+
+}
+
+.textBanner h2 {
+  text-align: left;
+  width: 100%;
+  font-size: 60px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.textBanner h2 span {
+  font-weight: 200;
+}
+
+.textBanner p {
+  text-align: left;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.imgBanner {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  background-image: url(../../src/assets/img-banner-panal.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:center center;
+  border-radius: 0px 0px 300px 0px;
+  padding: 50px;
+  
+}
+
+.imgBanner img {
+  width: 40%;
+  padding: 30px;
+}
+
+@media screen and (max-width:1024px) {
+  .containerBanner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #F2994A;
+    background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);
+    background: linear-gradient(to right, #F2C94C, #F2994A);
+    padding: 50px 20px;
+  }
+
+  .textBanner {
+    width: 100%;
+
+  }
+
+  .textBanner h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 100px;
+  }
+
+  .textBanner h2 {
+    text-align: center;
+    width: 100%;
+    font-size: 80px;
+  }
+
+  .textBanner p {
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+    font-weight: 500;
+  }
+
+  .imgBanner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    height: auto;
+  }
+
+  .imgBanner img {
+    width: 40%;
+    margin: auto;
+    padding: 5px;
+  }
 }
