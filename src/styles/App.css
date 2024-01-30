@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
 .containerBanner {
   width: 100%;
   display: flex;
@@ -24,6 +28,7 @@
   flex-direction: column;
   align-items: center;
   padding: 80px;
+  font-family: 'Bebas Neue', sans-serif;
 }
 
 .textBanner h1 {
@@ -33,11 +38,12 @@
   font-weight: 200;
   display: flex;
   justify-content: center;
+  letter-spacing: 2px;
 }
 
 .textBanner h1 span {
   font-weight: bold;
-
+  margin-left: 5px;
 }
 
 .textBanner h2 {
@@ -47,10 +53,12 @@
   font-weight: bold;
   display: flex;
   justify-content: center;
+  letter-spacing: 2px;
 }
 
 .textBanner h2 span {
   font-weight: 200;
+  margin-left: 5px;
 }
 
 .textBanner p {
@@ -60,6 +68,7 @@
   font-weight: bold;
   display: flex;
   justify-content: center;
+  letter-spacing: 1px;
 }
 
 .imgBanner {
@@ -72,6 +81,7 @@
   background-position: center center;
   border-radius: 0px 0px 300px 0px;
   padding: 50px;
+  overflow: hidden;
 
 }
 
@@ -177,12 +187,14 @@
     align-items: center;
     padding: 5%;
     height: auto;
+    overflow: hidden;
   }
 
   .imgBanner img {
     width: 40%;
     margin: auto;
     padding: 5px;
+
   }
 }
 

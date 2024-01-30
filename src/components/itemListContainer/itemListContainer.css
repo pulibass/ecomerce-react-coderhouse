@@ -2,3 +2,12 @@
     padding: 15px;
     
 }
+
+.itemListContainer p{
+font-family: 'Bebas Neue', sans-serif;
+color: orange;
+font-size: 50px;
+display: flex;
+flex-direction: column;
+letter-spacing: 1px;
+}

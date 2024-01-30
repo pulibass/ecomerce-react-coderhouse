@@ -23,7 +23,7 @@ function App() {
         </div>
 
       </main>
-      <ItemListContainer mensaje={"Transforma tu Vida con Productos de Apiterapia en Dejando Huellas "} />
+      <ItemListContainer mensaje={"Transforma tu Vida con Productos de Apiterapia en  "} subMensaje={"Dejando Huellas"} />
     <ItemContainer />
     </>
   )
