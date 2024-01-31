@@ -72,16 +72,16 @@
     text-decoration: none;
     border: hidden;
     font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 .btnVerMas:hover {
-    background: #deaf14;
-    background-image: -webkit-linear-gradient(top, #deaf14, #FFCC18);
-    background-image: -moz-linear-gradient(top, #deaf14, #FFCC18);
-    background-image: -ms-linear-gradient(top, #deaf14, #FFCC18);
-    background-image: -o-linear-gradient(top, #deaf14, #FFCC18);
-    background-image: linear-gradient(to bottom, #deaf14, #FFCC18);
+    background: #232526;
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    background: linear-gradient(to right, #414345, #232526);
     text-decoration: none;
+    color: #FFCC18;
 }
 
 @media screen and (max-width:1024px) {

@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemListContainer from './components/itemListContainer/ItemListContainer';
 import Banner from './assets/img-banner.png'
 import ItemContainer from './components/itemContainer/ItemContainer';
+import ItemDetailContainer from './components/itemDetailContainer/ItemDetailContainer';
 
 function App() {
 
@@ -24,7 +25,9 @@ function App() {
 
       </main>
       <ItemListContainer mensaje={"Transforma tu Vida con Productos de Apiterapia en  "} subMensaje={"Dejando Huellas"} />
-    <ItemContainer />
+      <ItemContainer />
+
+      <ItemDetailContainer />
     </>
   )
 }

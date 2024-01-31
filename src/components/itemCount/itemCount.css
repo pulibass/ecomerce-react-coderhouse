@@ -1,0 +1,94 @@
+.itemCountContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    letter-spacing: 2px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.buttonsAD {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonD,
+.buttonI {
+    width: 80px;
+    border-radius: 10px;
+    padding: 5px;
+    border: hidden;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFCC18;
+    background-image: -webkit-linear-gradient(top, #FFCC18, #deaf14);
+    background-image: -moz-linear-gradient(top, #FFCC18, #deaf14);
+    background-image: -ms-linear-gradient(top, #FFCC18, #deaf14);
+    background-image: -o-linear-gradient(top, #FFCC18, #deaf14);
+    background-image: linear-gradient(to bottom, #FFCC18, #deaf14);
+}
+
+.buttonD:hover {
+    background: #232526;
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    background: linear-gradient(to right, #414345, #232526);
+    text-decoration: none;
+    color: #FFCC18;
+}
+
+.buttonI:hover {
+    background: #232526;
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    background: linear-gradient(to right, #414345, #232526);
+    text-decoration: none;
+    color: #FFCC18;
+}
+
+.countP {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 20px;
+    width: 50px;
+    background: #232526;
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    background: linear-gradient(to right, #414345, #232526);
+    text-align: center;
+    border-radius: 200%;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.addToCart {
+    color: #FFCC18;
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    border: hidden;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #232526;
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    background: linear-gradient(to right, #414345, #232526);
+    letter-spacing: 2px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.addToCart:hover {
+    background: #deaf14;
+    background-image: -webkit-linear-gradient(top, #deaf14, #FFCC18);
+    background-image: -moz-linear-gradient(top, #deaf14, #FFCC18);
+    background-image: -ms-linear-gradient(top, #deaf14, #FFCC18);
+    background-image: -o-linear-gradient(top, #deaf14, #FFCC18);
+    background-image: linear-gradient(to bottom, #deaf14, #FFCC18);
+    text-decoration: none;
+    color: #ffffff;
+}

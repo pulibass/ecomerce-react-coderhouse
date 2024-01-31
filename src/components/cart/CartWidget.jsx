@@ -5,6 +5,8 @@ import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react';
 function CartWidget() {
     const [count, useCount] = useState(0);
+
+    
     return (
         <div className='contenedor-cart'>
             <button className='button-cart d-flex flex-row' onClick={() => useCount(count + 1)}>
