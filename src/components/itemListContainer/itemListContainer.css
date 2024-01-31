@@ -1,13 +1,29 @@
-.itemListContainer{
+.itemListContainer {
     padding: 15px;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.itemListContainer p{
-font-family: 'Bebas Neue', sans-serif;
-color: orange;
-font-size: 50px;
-display: flex;
-flex-direction: column;
-letter-spacing: 1px;
+.itemListContainer p:nth-child(1) {
+    font-family: 'Bebas Neue', sans-serif;
+    color: orange;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+.itemListContainer p:nth-child(2) {
+    font-family: sans-serif;
+    font-style: italic;
+    color: orange;
+    font-size: 30px;
+    letter-spacing: 1px;
+    width: 50%;
+    text-align: right;
+    text-transform:capitalize;
+    font-weight: 500;
 }

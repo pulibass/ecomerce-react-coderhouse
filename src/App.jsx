@@ -24,7 +24,7 @@ function App() {
         </div>
 
       </main>
-      <ItemListContainer mensaje={"Transforma tu Vida con Productos de Apiterapia en  "} subMensaje={"Dejando Huellas"} />
+      <ItemListContainer mensaje={"La primera riqueza es la salud. "} subMensaje={'"Ralph W. Emerson."'} />
       <ItemContainer />
 
       <ItemDetailContainer />
