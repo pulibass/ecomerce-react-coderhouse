@@ -5,13 +5,14 @@
     flex-wrap: wrap;
     padding-bottom: 50px;
     font-family: 'Bebas Neue', sans-serif;
+    width: 33.3%;
 }
 
 .card {
     border: hidden;
     margin: 10px;
     padding: 20px;
-    width: 30%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     border-radius: 15px;
@@ -39,20 +40,28 @@
     margin-top: 20px;
     padding-left: 15px;
     letter-spacing: 1px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .detalles-container h3 {
     font-weight: bold;
     text-transform: uppercase;
+    width: 100%;
 }
 
-.detalles-container p {
+.detalles {
     font-weight: 700;
+    font-size: 20px;
+    text-align: start;
 }
 
 .precio {
     font-weight: bold;
     font-size: 20px;
+    width: 100%;
 }
 
 .btnVerMas {
@@ -90,11 +99,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
 
     .card {
         width: 50%;
         min-width: 50%;
+        margin: auto;
     }
 }
 
@@ -104,6 +115,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
 
     .card {
@@ -118,6 +130,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
 
     .card {

@@ -1,0 +1,40 @@
+.itemList {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+@media screen and (max-width:1024px) {
+    .itemList {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .itemList {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .itemList {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}

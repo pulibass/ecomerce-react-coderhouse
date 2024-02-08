@@ -1,14 +1,14 @@
 import React from "react";
 import CartWidget from '../cart/CartWidget';
 import "./navBar.css";
-import Logo from '../../assets/logo-dejando-huellas.png';
+import Logo from '../../../public/img/logo-dejando-huellas.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 
 
 const NavBar = () => {
 
-    
+
     return (
         <div className="nav-container">
             <nav className="navbar navbar-expand-lg navbar-light ">
