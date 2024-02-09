@@ -31,10 +31,31 @@
     display: none;
 }
 
+.navbar-toggler{
+    border: none !important
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important
+}
+
+.icono-menu {
+    color: #fff;
+}
+
 @media screen and (max-width: 991px) {
    .cart  .menu-burger {
         display: block;
     }
+.navbar-toggler {
+    border: none !important
+}
 
+.navbar-toggler:focus {
+    box-shadow: none !important
+}
 
+.icono-menu{
+color: #fff;
+}
 }
