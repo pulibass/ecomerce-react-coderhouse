@@ -9,7 +9,7 @@ function ItemListContainer({ mensaje, subMensaje }) {
   const { categoryId } = useParams()
 
   useEffect(() => {
-    fetch("/public/productos.json")
+    fetch("../data/productos.json")
       .then(response => response.json())
       .then(producto => {
         if (categoryId) {
