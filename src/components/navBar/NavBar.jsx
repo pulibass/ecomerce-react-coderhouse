@@ -14,7 +14,7 @@ const NavBar = () => {
         <div className="nav-container">
             <nav className="navbar navbar-expand-lg navbar-light ">
                 <div className="container-fluid">
-                    <div className="logo">
+                    <div className="logo ">
                         <Link className="text-decoration-none" to={'/'}>
                             <img className=" imagen-logo " src={Logo} alt="" />
                         </Link>
@@ -29,11 +29,11 @@ const NavBar = () => {
                             </button>
                         </div>
                         <Link className="text-decoration-none" to={'/checkout'}>
-                        <CartWidget />
+                            <CartWidget />
                         </Link>
                     </div>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <ul className="navbar-nav me-auto mb-2 mb-lg-0  w-75">
                             <li className="nav-item">
                                 <Link className="text-decoration-none" to={'/'}>
                                     <button className="nav-link text-light" aria-current="page" >Inicio</button>
@@ -57,7 +57,7 @@ const NavBar = () => {
                         </ul>
                         <form className="d-flex w-50">
                             <input className="form-control me-2 w-75" type="search" placeholder="Buscar productos" aria-label="Search" />
-                                <button className="btn " type="submit"><FontAwesomeIcon icon={faMagnifyingGlass} style={{ color: "#FFD43B", fontSize: "20px" }} /></button>
+                            <button className="btn " type="submit"><FontAwesomeIcon icon={faMagnifyingGlass} style={{ color: "#FFD43B", fontSize: "20px" }} /></button>
                         </form>
                     </div>
                 </div>
