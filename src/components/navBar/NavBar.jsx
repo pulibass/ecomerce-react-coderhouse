@@ -4,7 +4,8 @@ import "./navBar.css";
 import Logo from '../../../public/img/logo-dejando-huellas.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
-
+import { Link } from "react-router-dom";
+import ItemListContainer from '../itemListContainer/ItemListContainer'
 
 const NavBar = () => {
 
@@ -14,8 +15,11 @@ const NavBar = () => {
             <nav className="navbar navbar-expand-lg navbar-light ">
                 <div className="container-fluid">
                     <div className="logo">
-                        <img className=" imagen-logo " src={Logo} alt="" />
+                        <Link className="text-decoration-none" to={'/'}>
+                            <img className=" imagen-logo " src={Logo} alt="" />
+                        </Link>
                     </div>
+
                     <div className="cart d-flex flex-row-reverse">
                         <div className="menu-burger ">
                             <button className="navbar-toggler d-flex justify-content icon-burger text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,33 +28,41 @@ const NavBar = () => {
                                 </svg>
                             </button>
                         </div>
+                        <Link className="text-decoration-none" to={'/checkout'}>
                         <CartWidget />
+                        </Link>
                     </div>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                        <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
                             <li className="nav-item">
-                                <button className="nav-link text-light" aria-current="page" >Inicio</button>
+                                <Link className="text-decoration-none" to={'/'}>
+                                    <button className="nav-link text-light" aria-current="page" >Inicio</button>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <button className="nav-link text-light" >Productos</button>
+                                <Link className="text-decoration-none" to={'/category/apitoxina'}>
+                                    <button className="nav-link text-light"  >Apitoxina</button>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <button className="nav-link text-light" >Contacto</button>
+                                <Link className="text-decoration-none" to={'/category/nutricion-belleza'}>
+                                    <button className="nav-link text-light"  >Nutrición y Belleza</button>
+                                </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="text-decoration-none" to={'/contacto'}>
+                                    <button className="nav-link text-light"  >Contacto</button>
+                                </Link>
                             </li>
                         </ul>
-                        <form className="d-flex">
-                            <input className="form-control me-2" type="search" placeholder="Buscar productos" aria-label="Search" />
-                            <button className="btn " type="submit"><FontAwesomeIcon icon={faMagnifyingGlass} style={{ color: "#FFD43B", fontSize: "20px" }} /></button>
+                        <form className="d-flex w-50">
+                            <input className="form-control me-2 w-75" type="search" placeholder="Buscar productos" aria-label="Search" />
+                                <button className="btn " type="submit"><FontAwesomeIcon icon={faMagnifyingGlass} style={{ color: "#FFD43B", fontSize: "20px" }} /></button>
                         </form>
                     </div>
-
-
-
                 </div>
             </nav>
-
         </div>
-
     );
 };
 

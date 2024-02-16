@@ -5,6 +5,7 @@
     "name": "Apitoxina",
     "value": 15000,
     "details": "Apitoxina nivel 5",
+    "itemDetails": "Apitoxina pura y natural: nuestro producto ofrece los beneficios terapéuticos de la picadura de abeja, conocida por sus propiedades antiinflamatorias y analgésicas. Perfecto para aliviar dolores musculares y articulares. ¡Experimenta el poder curativo de la naturaleza con nuestra apitoxina de calidad premium!",
     "stock": 20,
     "category": "apitoxina"
   },
@@ -14,6 +15,7 @@
     "name": "Apitoxina",
     "value": 13000,
     "details": "Apitoxina nivel 4",
+    "itemDetails": "Apitoxina pura y natural: nuestro producto ofrece los beneficios terapéuticos de la picadura de abeja, conocida por sus propiedades antiinflamatorias y analgésicas. Perfecto para aliviar dolores musculares y articulares. ¡Experimenta el poder curativo de la naturaleza con nuestra apitoxina de calidad premium!",
     "stock": 20,
     "category": "apitoxina"
   },
@@ -23,6 +25,7 @@
     "name": "Apitoxina",
     "value": 10000,
     "details": "Apitoxina nivel 3",
+    "itemDetails": "Apitoxina pura y natural: nuestro producto ofrece los beneficios terapéuticos de la picadura de abeja, conocida por sus propiedades antiinflamatorias y analgésicas. Perfecto para aliviar dolores musculares y articulares. ¡Experimenta el poder curativo de la naturaleza con nuestra apitoxina de calidad premium!",
     "stock": 20,
     "category": "apitoxina"
   },
@@ -33,7 +36,7 @@
     "value": 5000,
     "details": "Elimina pequeñas cicatrices, propiedades hidratantes",
     "stock": 20,
-    "category": "cosmetica"
+    "category": "nutricion-belleza"
   },
   {
     "id": "5",
@@ -42,7 +45,7 @@
     "value": 8000,
     "details": "Miel pura de abejas x 500grs",
     "stock": 20,
-    "category": "comestible"
+    "category": "nutricion-belleza"
   },
   {
     "id": "6",
@@ -51,6 +54,6 @@
     "value": 18000,
     "details": "Polen en polvo x 300grs",
     "stock": 20,
-    "category": "comestible"
+    "category": "nutricion-belleza"
   }
 ]

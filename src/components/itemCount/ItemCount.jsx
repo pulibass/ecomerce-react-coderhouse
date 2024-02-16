@@ -24,9 +24,12 @@ function ItemCount() {
                 <span className='fw-bold m-5 countP'>{counterButton}</span>
                 <button className='buttonI ' onClick={increment}>+</button>
             </div>
-            <button className='addToCart ' onClick={addToCart}>
-                añadir al carro
-            </button>
+            <div className='buttonAddToCart'>
+                <button className='addToCart ' onClick={addToCart}>
+                    añadir al carro
+                </button>
+            </div>
+            
         </div>
     )
 }

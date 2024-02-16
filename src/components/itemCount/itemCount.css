@@ -3,22 +3,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    padding: 20px;
+    flex-direction: row;
+    padding: 10px;
     letter-spacing: 2px;
     font-family: 'Bebas Neue', sans-serif;
+
 }
 
 .buttonsAD {
-    width: 100%;
+    width: 50%;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    height: 60px;
 }
 
 .buttonD,
 .buttonI {
-    width: 80px;
+    width: 50px;
     border-radius: 10px;
     padding: 5px;
     border: hidden;
@@ -64,6 +67,12 @@
     text-align: center;
     border-radius: 200%;
     font-family: 'Bebas Neue', sans-serif;
+}
+
+.buttonAddToCart {
+    width: 50%;
+    display: flex;
+    justify-content: center;
 }
 
 .addToCart {
