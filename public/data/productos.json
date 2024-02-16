@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "image": "/public/img/envase.png",
+    "image": "../img/envase.png",
     "name": "Apitoxina",
     "value": 15000,
     "details": "Apitoxina nivel 5",
@@ -11,7 +11,7 @@
   },
   {
     "id": "2",
-    "image": "/public/img/envase.png",
+    "image": "../img/envase.png",
     "name": "Apitoxina",
     "value": 13000,
     "details": "Apitoxina nivel 4",
@@ -21,7 +21,7 @@
   },
   {
     "id": "3",
-    "image": "/public/img/envase.png",
+    "image": "../img/envase.png",
     "name": "Apitoxina",
     "value": 10000,
     "details": "Apitoxina nivel 3",
@@ -31,7 +31,7 @@
   },
   {
     "id": "4",
-    "image": "/public/img/cera.png",
+    "image": "../img/cera.png",
     "name": "Cera de Abeja",
     "value": 5000,
     "details": "Elimina pequeñas cicatrices, propiedades hidratantes",
@@ -40,7 +40,7 @@
   },
   {
     "id": "5",
-    "image": "/public/img/miel.png",
+    "image": "../img/miel.png",
     "name": "Miel Pura",
     "value": 8000,
     "details": "Miel pura de abejas x 500grs",
@@ -49,7 +49,7 @@
   },
   {
     "id": "6",
-    "image": "/public/img/polen.png",
+    "image": "../img/polen.png",
     "name": "Polen",
     "value": 18000,
     "details": "Polen en polvo x 300grs",
