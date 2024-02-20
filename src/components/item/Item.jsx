@@ -1,5 +1,6 @@
 import React from 'react'
 import './item.css'
+import { Link } from 'react-router-dom'
 function Item({ product }) {
 
     return (
@@ -14,7 +15,9 @@ function Item({ product }) {
                         <h6 className='w-100 detalles'>{product.details}</h6>
                         <p className="precio">${product.value}</p>
                     </div>
-                    <button className='btnVerMas'>Ver Más</button>
+                    <Link to={`/product/${product.id}`}>
+                        <button className='btnVerMas'>Ver Más</button>
+                    </Link>
                 </div>
             </div>
         </>

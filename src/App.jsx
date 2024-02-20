@@ -31,7 +31,7 @@ function App() {
         <Routes>
           <Route path='/' element={<ItemListContainer mensaje={"La primera riqueza es la salud. "} subMensaje={'"Ralph W. Emerson."'} />} />
           <Route path='/category/:categoryId' element={<ItemListContainer />} />
-          <Route path='/product/:product' element={<ItemDetailContainer />} />
+          <Route path='/product/:productId' element={<ItemDetailContainer />} />
           <Route path='/cart' element={<Cart />} />
           <Route path='/checkout' element={<Chekout />} />
           <Route path='*' element={<NotFound />} />
