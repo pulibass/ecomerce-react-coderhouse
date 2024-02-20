@@ -7,7 +7,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBasketShopping } from '@fortawesome/free-solid-svg-icons'
 
 function ItemListContainer({ mensaje, subMensaje }) {
-
   const [productos, setProductos] = useState([])
   const { categoryId } = useParams()
 
@@ -23,17 +22,12 @@ function ItemListContainer({ mensaje, subMensaje }) {
         }
       })
   }, [categoryId])
-  /* let categoria = '';
-  if (productos.length > 0) {
-    categoria = productos[0].category;
-  } */
+  
   return (
     <div className=' mt-2 itemListContainer '>
       <p className='fw-bold h2 text-uppercase text-center '>{mensaje}</p>
       <p className='h2   '>{subMensaje}</p>
-      {/* {productos.length > 0 && (
-        <h2 className='tituloItemListContainer'><FontAwesomeIcon icon={faBagShopping} style={{ color: "#FFD43B", fontSize: "30px", padding: "5px" }} />{categoria}</h2>
-      )} */}
+      
       <h2 className='tituloItemListContainer mt-5' ><FontAwesomeIcon icon={faBasketShopping} style={{ color: "#FFD43B", fontSize: "30px", padding: "5px" }} />Tú próximo producto esta aquí</h2>
       <ItemList productos={productos} />
     </div>
