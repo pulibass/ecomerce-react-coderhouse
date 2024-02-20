@@ -19,7 +19,6 @@ function ItemDetailContainer() {
         const productoId = productos.find(producto => producto.id == productId)
         if (productoId)
           setItemProducto(productoId)
-        console.log(productos)
       })
   }, [])
   return (
