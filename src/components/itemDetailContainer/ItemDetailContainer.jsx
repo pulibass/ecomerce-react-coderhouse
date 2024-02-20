@@ -2,7 +2,7 @@ import React from 'react'
 import './itemDetailContainer.css'
 import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-import ItemDetail from '../itemDetail/ItemDetail'
+import ItemDetails from '../itemDetail/ItemDetails'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBagShopping } from '@fortawesome/free-solid-svg-icons'
 
@@ -24,7 +24,7 @@ function ItemDetailContainer() {
     <div className='itemDetailContainer mt-2'>
       <h2><FontAwesomeIcon icon={faBagShopping} style={{ color: "#FFD43B", fontSize: "30px", padding: "5px" }} />Seleccionaste el producto: <span>{itemProducto.name}</span></h2>
       <div className='contenedorItemDetail'>
-        <ItemDetail itemProductos={itemProducto} />
+        <ItemDetails itemProductos={itemProducto} />
       </div>
     </div>
 
