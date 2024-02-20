@@ -75,7 +75,7 @@ body {
   width: 50%;
   display: flex;
   justify-content: center;
-  background-image: url(../public/img/img-banner-panal.png);
+  background-image: url("/public/img/img-banner-panal.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
