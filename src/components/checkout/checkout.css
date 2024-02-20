@@ -1,0 +1,414 @@
+.main-cart {
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    margin: 5px auto;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fbffff;
+}
+
+.tituloChekout {
+    width: 100%;
+    padding: 15px;
+}
+
+.tituloChekout h2 {
+    padding: 15px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #FFD43B;
+    font-style: italic;
+    text-decoration: underline #FFCC18;
+    display: flex;
+}
+
+.main-cart .carrito {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.main-cart .carrito h2 {
+    font-size: 20px;
+    text-align: left;
+    width: 100%;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 15px;
+    text-decoration: underline;
+}
+
+.main-cart .carrito .titulos {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.main-cart .carrito .titulos .titulo-carrito {
+    width: 25%;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 5px;
+    text-align: center;
+}
+
+.main-cart .carrito .contenedor-productos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-cart .carrito .contenedor-productos .carro-compras {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+}
+
+.producto-carro {
+    width: 33.3%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-cart .carrito .contenedor-productos .carro-compras .producto-carro .imagen-carro {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.main-cart .carrito .contenedor-productos .carro-compras .producto-carro .imagen-carro .imagen-cart {
+    width: 50%;
+    justify-content: flex-start;
+}
+
+.main-cart .carrito .contenedor-productos .carro-compras .producto-carro .imagen-carro .imagen-cart img {
+    width: 150px;
+    height: 150px;
+}
+
+.main-cart .carrito .contenedor-productos .carro-compras .producto-carro .imagen-carro .title-producto-carro {
+    width: 100%;
+}
+
+.main-cart .carrito .contenedor-productos .carro-compras .producto-carro .imagen-carro .title-producto-carro h2 {
+    width: 100%;
+    font-size: 10px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    text-decoration: none;
+}
+
+.main-cart .carrito .contenedor-productos .carro-compras .producto-carro .imagen-carro .title-producto-carro h2 span {
+    text-align: left;
+}
+
+.main-cart .carrito .contenedor-productos .carro-compras .precio-carro {
+    width: 33.3%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-cart .carrito .contenedor-productos .carro-compras .precio-carro p {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+.main-cart .carrito .contenedor-productos .carro-compras .cantidad-carro {
+    width: 33.3%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-cart .carrito .contenedor-productos .carro-compras .cantidad-carro .button-cantidad {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-cart .carrito .contenedor-productos .carro-compras .cantidad-carro .button-cantidad .separacion {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-cart .carrito .contenedor-productos .carro-compras .cantidad-carro .button-cantidad .separacion button {
+    margin: auto;
+    width: 20px;
+}
+
+.main-cart .carrito .contenedor-productos .carro-compras .cantidad-carro .button-cantidad .separacion .btn-number {
+    height: 25px;
+}
+
+.main-cart .carrito .contenedor-productos .carro-compras .cantidad-carro .button-cantidad .btn-delete {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-cart .carrito .contenedor-productos .carro-compras .cantidad-carro .button-cantidad .btn-delete button {
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: hidden;
+    cursor: pointer;
+}
+
+.main-cart .carrito .contenedor-productos .carro-compras .cantidad-carro .button-cantidad .btn-delete button img {
+    width: 30px;
+    height: 30px;
+}
+
+.main-cart .carrito .compra {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+}
+
+.main-cart .carrito .compra .total {
+    width: 50%;
+    padding: 5px;
+}
+
+.main-cart .carrito .compra .total h4 {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.main-cart .carrito .compra .boton-comprar {
+    display: flex;
+    justify-content: right;
+    width: 50%;
+    padding: 5px;
+}
+
+.main-cart .carrito .compra .boton-comprar button {
+    background-color: #10b110;
+    border: hidden;
+    color: #e4e1e1;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main-cart .carrito .compra .boton-comprar button:hover {
+    background-color: #23a223;
+}
+
+@media screen and (max-width: 768px) {
+    .main-cart .carrito {
+        margin-top: 50px;
+    }
+
+    .main-cart .carrito .contenedor-productos .carro-compras {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .main-cart .carrito .contenedor-productos .carro-compras .producto-carro {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-cart .carrito .contenedor-productos .carro-compras .producto-carro .imagen-carro {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        text-align: center;
+    }
+
+    .main-cart .carrito .contenedor-productos .carro-compras .producto-carro .imagen-carro .imagen-cart {
+        width: 100%;
+        display: none;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .main-cart .carrito .contenedor-productos .carro-compras .producto-carro .imagen-carro .imagen-cart img {
+        display: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .main-cart .carrito .contenedor-productos .carro-compras .producto-carro .imagen-carro .title-producto {
+        width: 100%;
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .main-cart .carrito .contenedor-productos .carro-compras .producto-carro .imagen-carro .title-producto h2 {
+        width: 100%;
+        font-size: 7px;
+    }
+
+    .main-cart .carrito .contenedor-productos .carro-compras .cantidad-carro .button-cantidad {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .main-cart .carrito .contenedor-productos .carro-compras .cantidad-carro .button-cantidad .separacion {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main-cart .carrito .contenedor-productos .carro-compras .cantidad-carro .button-cantidad .separacion button {
+        margin: auto;
+        width: 20px;
+    }
+
+    .main-cart .carrito .contenedor-productos .carro-compras .cantidad-carro .button-cantidad .separacion .btn-number {
+        height: 25px;
+    }
+
+    .main-cart .carrito .contenedor-productos .carro-compras .cantidad-carro .button-cantidad .btn-delete {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-cart .carrito .contenedor-productos .carro-compras .cantidad-carro .button-cantidad .btn-delete button {
+        width: 50px;
+        height: 50px;
+        background: none;
+        border: hidden;
+        cursor: pointer;
+    }
+
+    .main-cart .carrito .contenedor-productos .carro-compras .cantidad-carro .button-cantidad .btn-delete button img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main-cart {
+        width: 100%;
+        height: 100%;
+    }
+
+    .main-cart .carrito {
+        width: 100%;
+    }
+
+    .main-cart .carrito .titulos .titulo-carrito {
+        font-size: 12px;
+    }
+
+    .main-cart .carrito .contenedor-productos .carro-compras .precio-carro p {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        font-size: 12px;
+        font-family: sans-serif;
+        font-weight: 700;
+    }
+
+    .main-cart .carrito .contenedor-productos .carro-compras .cantidad-carro .button-cantidad .separacion {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main-cart .carrito .contenedor-productos .carro-compras .cantidad-carro .button-cantidad .separacion button {
+        margin: auto;
+        width: 15px;
+    }
+
+    .main-cart .carrito .contenedor-productos .carro-compras .cantidad-carro .button-cantidad .separacion .btn-number {
+        height: 25px;
+    }
+
+    .main-cart .carrito .compra {
+        width: 100%;
+        padding: 5px;
+        display: flex;
+    }
+
+    .main-cart .carrito .compra .total {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        width: 80%;
+        padding-left: 15px;
+        padding-top: 5px;
+    }
+
+    .main-cart .carrito .compra .total h4 {
+        width: 100%;
+        font-size: 15px;
+        font-family: sans-serif;
+    }
+
+    .main-cart .carrito .compra .boton-comprar {
+        display: flex;
+        justify-content: right;
+        width: 40%;
+        padding: 5px;
+    }
+
+    .main-cart .carrito .compra .boton-comprar button {
+        border: hidden;
+        font-weight: 700;
+        font-size: 10px;
+        width: 100%;
+        height: 30px;
+        padding: 5px;
+        border-radius: 5px;
+    }
+}
