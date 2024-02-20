@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     padding: 5px;
+    font-family: 'Bebas Neue', sans-serif !important;
 }
 
 .itemListContainer p:nth-child(1) {
@@ -26,6 +27,16 @@
     text-align: right;
     text-transform: capitalize;
     font-weight: 500;
+}
+
+.tituloItemListContainer {
+    padding: 15px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #050505;
+    text-decoration: underline #FFCC18;
+    font-style: normal;
+    text-align: left;
+    width: 100%;
 }
 
 @media screen and (max-width:768px) {

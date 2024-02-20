@@ -1,3 +1,22 @@
+.itemDetailContainer {
+    padding: 10px;
+}
+
+.itemDetailContainer h2 {
+    padding: 15px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #FFD43B;
+    font-style: italic;
+}
+
+.itemDetailContainer h2 span {
+    padding: 15px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #050505;
+    text-decoration: underline #FFCC18;
+    font-style: normal
+}
+
 .contenedorItemDetail {
     margin: auto;
     width: 80%;
