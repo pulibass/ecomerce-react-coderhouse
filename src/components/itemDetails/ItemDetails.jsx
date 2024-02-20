@@ -3,7 +3,7 @@ import Logo from '../../../public/img/logo-completo-dejando-huellas.png'
 import Estrella from '../../../public/img/estrella.png'
 import { faBullhorn, faSyringe } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import './itemDetail.css'
+import './itemDetails.css'
 
 function ItemDetail({ itemProductos }) {
     return (

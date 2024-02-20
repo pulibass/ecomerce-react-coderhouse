@@ -2,9 +2,9 @@ import React from 'react'
 import './itemDetailContainer.css'
 import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-import ItemDetails from '../itemDetail/ItemDetails'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBagShopping } from '@fortawesome/free-solid-svg-icons'
+import ItemDetails from '../itemDetails/ItemDetails'
 
 function ItemDetailContainer() {
 

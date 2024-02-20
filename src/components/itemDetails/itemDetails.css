@@ -1,3 +1,10 @@
+.contenedorDetalles {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
 .imagenDetalles {
     width: 50%;
     height: 700px;
@@ -109,6 +116,21 @@
 }
 
 @media screen and (max-width:1024px) {
+
+    .contenedorDetalles {
+        margin: auto;
+        width: 80%;
+        max-width: 500px;
+        padding: 0px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: row;
+        font-family: 'Bebas Neue', sans-serif;
+        flex-direction: column;
+    }
+
     .imagenDetalles {
         width: 80%;
         height: 400px;
@@ -218,5 +240,42 @@
 
     .stock p {
         padding-left: 5px;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    .contenedorDetalles {
+        margin: auto;
+        width: 100%;
+        padding: 0px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: row;
+        font-family: 'Bebas Neue', sans-serif;
+        flex-direction: column;
+    }
+
+    .imagenDetalles {
+        width: 90%;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .itemsDetalles {
+        width: 90%;
+        background-color: #ffffff;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 10px 24px -6px rgba(0, 0, 0, 0.75);
+        border-radius: 15px;
     }
 }
