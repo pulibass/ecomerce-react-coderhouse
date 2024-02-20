@@ -1,0 +1,154 @@
+.containerNotFound {
+    background-image: url("/public/img/banner-404.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin-bottom: 0px;
+}
+
+.img-404 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-404 img {
+    width: 50%;
+    max-width: 700px;
+    min-width: 300px;
+}
+
+.items404-button {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.items404 {
+    width: 100%;
+}
+
+.items404 h2 {
+    font-size: 230px;
+    text-align: center;
+}
+
+.items404 h4 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.items404 h6 {
+    font-size: 15px;
+    text-align: center;
+}
+
+.button404 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.link404 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.link404 button {
+    width: 50%;
+    height: 50px;
+    margin-top: 50px;
+    border-radius: 50px;
+    background: #FFCC18;
+    background-image: -webkit-linear-gradient(top, #FFCC18, #deaf14);
+    background-image: -moz-linear-gradient(top, #FFCC18, #deaf14);
+    background-image: -ms-linear-gradient(top, #FFCC18, #deaf14);
+    background-image: -o-linear-gradient(top, #FFCC18, #deaf14);
+    background-image: linear-gradient(to bottom, #FFCC18, #deaf14);
+    border: hidden;
+    box-shadow: 0px 10px 24px -6px rgba(0, 0, 0, 0.75);
+    font-size: 20px;
+}
+
+.link404 button:hover {
+    background: #232526;
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    background: linear-gradient(to right, #414345, #232526);
+    text-decoration: none;
+    color: #FFCC18;
+
+}
+
+@media screen and (max-width:768px) {
+    .containerNotFound {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+        align-items: center;
+    }
+
+    .items404-button {
+        width: 100%;
+
+    }
+
+    .items404 {
+        width: 100%;
+    }
+
+    .items404 h2 {
+        font-size: 230px;
+        text-align: center;
+    }
+
+    .items404 h4 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .items404 h6 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .button404 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .link404 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .link404 button {
+        width: 80%;
+        max-width: 300px;
+        height: 50px;
+        margin-top: 50px;
+        font-size: 20px;
+    }
+}
