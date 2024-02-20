@@ -1,9 +1,8 @@
 import React from 'react'
-import ItemCount from '../itemCount/ItemCount'
 import './itemDetailContainer.css'
 import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-import ItemDetail from '../itemDetail/itemDetail'
+import ItemDetail from '../itemDetail/ItemDetail'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBagShopping } from '@fortawesome/free-solid-svg-icons'
 
