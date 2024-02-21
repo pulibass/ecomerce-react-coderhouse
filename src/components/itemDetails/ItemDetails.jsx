@@ -1,11 +1,19 @@
-import ItemCount from '../itemCount/ItemCount'
-import Logo from '../../../public/img/logo-completo-dejando-huellas.png'
-import Estrella from '../../../public/img/estrella.png'
-import { faBullhorn, faSyringe } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import './itemDetails.css'
+import React from 'react';
+import ItemCount from '../itemCount/ItemCount';
+import Logo from '../../../public/img/logo-completo-dejando-huellas.png';
+import Estrella from '../../../public/img/estrella.png';
+import { faBullhorn, faSyringe } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useState } from 'react';
+import './itemDetails.css';
 
 function ItemDetail({ itemProductos }) {
+    const [cart, setCart] = useState([]);
+
+    const addToCart = (quantity) => {
+        setCart([...cart, { quantity }]);
+    };
+
     return (
         <div className='contenedorDetalles'>
             <div className="imagenDetalles">
@@ -33,10 +41,10 @@ function ItemDetail({ itemProductos }) {
                     <FontAwesomeIcon icon={faBullhorn} style={{ color: "#FFD43B", fontSize: "30px" }} />
                     <p>{itemProductos.stock}</p>
                 </div>
-                <ItemCount />
+                <ItemCount stock={itemProductos.stock} onAddToCart={addToCart} />
             </div>
         </div>
-    )
+    );
 }
 
-export default ItemDetail
+export default ItemDetail;
