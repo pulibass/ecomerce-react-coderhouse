@@ -9,6 +9,7 @@ import Chekout from './components/checkout/Checkout'
 import Cart from './components/cart/CartWidget'
 import NotFound from './components/notFound/NotFound'
 import Footer from './components/footer/Footer';
+import Formulario from './components/checkout/Formulario';
 function App() {
 
   return (
@@ -39,6 +40,7 @@ function App() {
           <Route path='/cart' element={<Cart />} />
           <Route path='/checkout' element={<Chekout />} />
           <Route path='*' element={<NotFound />} />
+          <Route path='/formulario' element={<Formulario />} />
         </Routes>
         <Footer />
       </BrowserRouter>

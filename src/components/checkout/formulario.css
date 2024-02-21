@@ -1,0 +1,131 @@
+.formulario {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+.tituloFormulario {
+    width: 100%;
+    padding: 15px;
+}
+
+.tituloFormulario h2 {
+    padding: 15px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #FFD43B;
+    font-style: italic;
+    text-decoration: underline #FFCC18;
+    display: flex;
+}
+
+.formChekout {
+    margin: auto;
+    width: 30%;
+    padding: 15px;
+    border-radius: 5px;
+    background: #F2994A;
+    background: -webkit-linear-gradient(to left, #F2C94C, #F2994A);
+    background: linear-gradient(to left, #F2C94C, #F2994A);
+    box-shadow: 0px 10px 24px -6px rgba(0, 0, 0, 0.75);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: hidden;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    height: 35px;
+    text-transform: uppercase;
+}
+
+.botones {
+    margin-top: 20px;
+}
+
+.btn-enviar,
+.btn-limpiar {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-enviar {
+    background: #232526;
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    background: linear-gradient(to right, #414345, #232526);
+    text-decoration: none;
+    color: #FFCC18;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+
+}
+
+.btn-enviar:hover {
+    background: #FFCC18;
+    background-image: -webkit-linear-gradient(top, #FFCC18, #deaf14);
+    background-image: -moz-linear-gradient(top, #FFCC18, #deaf14);
+    background-image: -ms-linear-gradient(top, #FFCC18, #deaf14);
+    background-image: -o-linear-gradient(top, #FFCC18, #deaf14);
+    background-image: linear-gradient(to bottom, #FFCC18, #deaf14);
+    color: #232526;
+    box-shadow: 0px 10px 24px -6px rgba(0, 0, 0, 0.75);
+}
+
+.btn-limpiar {
+    background-color: #ffffff;
+    color: #fdc704;
+    margin-left: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+
+}
+
+.btn-limpiar:hover {
+    background: #FFCC18;
+    background-image: -webkit-linear-gradient(top, #FFCC18, #deaf14);
+    background-image: -moz-linear-gradient(top, #FFCC18, #deaf14);
+    background-image: -ms-linear-gradient(top, #FFCC18, #deaf14);
+    background-image: -o-linear-gradient(top, #FFCC18, #deaf14);
+    background-image: linear-gradient(to bottom, #FFCC18, #deaf14);
+    color: #232526;
+    box-shadow: 0px 10px 24px -6px rgba(0, 0, 0, 0.75);
+}
+
+@media screen and (max-width:500px) {
+    .formulario {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    .formChekout {
+        width: 100%;
+        padding: 15px;
+        border: 1px solid #5c4444;
+        border-radius: 5px;
+        background: #F2994A;
+        background: -webkit-linear-gradient(to left, #F2C94C, #F2994A);
+        background: linear-gradient(to left, #F2C94C, #F2994A);
+        box-shadow: 0px 10px 24px -6px rgba(0, 0, 0, 0.75);
+    }
+}

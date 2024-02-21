@@ -8,9 +8,8 @@ function CartWidget() {
     
     return (
         <div className='contenedor-cart'>
-            {/* <button className='button-cart d-flex flex-row' onClick={() => useCount(count + 1)}> */}
-            <button className='button-cart d-flex flex-row'>
-                <FontAwesomeIcon icon={faCartShopping} style={{ color: "#FFD43B", fontSize: "30px" }} />
+            <button className='button-cart '>
+                <FontAwesomeIcon icon={faCartShopping} style={{ color: "#FFD43B", fontSize: "20px" }} />
                 <p>0</p>
             </button>
         </div>

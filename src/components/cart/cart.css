@@ -1,11 +1,27 @@
+
+.contenedor-cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
 .contenedor-cart button{
-margin-right: 15px;
+padding: 5px;
 background:none;
 border: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .button-cart{
     color: #fff;
     font-size: 18px;
     font-weight: bold;
+}
+.button-cart p{
+margin-left: 5px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
