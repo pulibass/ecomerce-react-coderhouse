@@ -14,10 +14,10 @@ function Checkout() {
         <table>
           <thead>
             <tr>
-              <th>Producto</th>
-              <th>Precio</th>
-              <th>Cantidad</th>
-              <th>Subtotal</th>
+              <th>PRODUCTO</th>
+              <th>PRECIO</th>
+              <th>CANTIDAD</th>
+              <th>SUB TOTAL</th>
             </tr>
           </thead>
           <tbody>
@@ -40,7 +40,7 @@ function Checkout() {
           </tbody>
           <tfoot>
             <tr>
-              <td colspan="3">Total</td>
+              <td colspan="3">TOTAL</td>
               <td id="total">$15000</td>
             </tr>
             <tr>
