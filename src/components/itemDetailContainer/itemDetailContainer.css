@@ -1,5 +1,9 @@
 .itemDetailContainer {
     padding: 10px;
+    background-image: url('/public/img/banner-404.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .itemDetailContainer h2 {
@@ -7,6 +11,7 @@
     font-family: 'Bebas Neue', sans-serif;
     color: #FFD43B;
     font-style: italic;
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.6);
 }
 
 .itemDetailContainer h2 span {
@@ -14,7 +19,8 @@
     font-family: 'Bebas Neue', sans-serif;
     color: #050505;
     text-decoration: underline #FFCC18;
-    font-style: normal
+    font-style: normal;
+    text-shadow: none;
 }
 
 .contenedorItemDetail {

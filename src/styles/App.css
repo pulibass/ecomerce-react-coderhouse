@@ -90,6 +90,8 @@ body {
   padding: 30px;
 }
 
+
+
 @media screen and (max-width:1024px) {
   .containerBanner {
     width: 100%;

@@ -9,6 +9,9 @@ function Checkout() {
     <div className="main-cart">
       <div className='tituloChekout'>
         <h2><FontAwesomeIcon icon={faCartShopping} style={{ color: "#FFD43B", fontSize: "30px", padding: "5px" }} />Finaliza tu compra</h2>
+        <Link className='btnAtrasCheckout' to={'/'}>
+          <button className='btn  fw-bold buttonAtrasCheckout'>Volver a Productos</button>
+        </Link>
       </div>
       <div class="carrito-container">
         <table>

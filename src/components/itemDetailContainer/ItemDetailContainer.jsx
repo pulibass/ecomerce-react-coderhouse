@@ -21,7 +21,7 @@ function ItemDetailContainer() {
       })
   }, [])
   return (
-    <div className='itemDetailContainer mt-2'>
+    <div className='itemDetailContainer'>
       <h2><FontAwesomeIcon icon={faBagShopping} style={{ color: "#FFD43B", fontSize: "30px", padding: "5px" }} />Seleccionaste el producto: <span>{itemProducto.name}</span></h2>
       <div className='contenedorItemDetail'>
         <ItemDetails itemProductos={itemProducto} />

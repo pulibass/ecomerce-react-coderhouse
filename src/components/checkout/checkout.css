@@ -23,7 +23,32 @@
     display: flex;
 }
 
+.btnAtrasCheckout {
+    padding: 15px;
+}
 
+.buttonAtrasCheckout {
+    width: 150px;
+    min-width: 80px;
+    background: #FFCC18;
+    background-image: -webkit-linear-gradient(top, #FFCC18, #deaf14);
+    background-image: -moz-linear-gradient(top, #FFCC18, #deaf14);
+    background-image: -ms-linear-gradient(top, #FFCC18, #deaf14);
+    background-image: -o-linear-gradient(top, #FFCC18, #deaf14);
+    background-image: linear-gradient(to bottom, #FFCC18, #deaf14);
+    color: #232526;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.buttonAtrasCheckout:hover {
+    background: #232526;
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    background: linear-gradient(to right, #414345, #232526);
+    text-decoration: none;
+    color: #ffcc18;
+}
 
 .carrito-container {
     width: 100%;
@@ -57,12 +82,12 @@ td:nth-child(4) {
     width: 20%;
 }
 
-tbody{
+tbody {
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.imagenPC{
+.imagenPC {
     width: 100px;
     height: 100px;
     margin: 10px;
@@ -72,6 +97,7 @@ tfoot {
     font-weight: 700;
     text-transform: uppercase;
 }
+
 .restar-btn,
 .sumar-btn {
     border: hidden;
@@ -92,7 +118,8 @@ tfoot {
     margin: 10px;
 
 }
-.cantidad{
+
+.cantidad {
     width: 33.3%;
     font-size: 18px;
     margin: 10px;

@@ -17,18 +17,20 @@ function ItemListContainer({ mensaje, subMensaje }) {
         if (categoryId) {
           const productosCategory = producto.filter(prodCategory => prodCategory.category == categoryId)
           setProductos(productosCategory)
+          document.querySelector('.itemListContainer').classList.add('con-background');
         } else {
           setProductos(producto)
+          document.querySelector('.itemListContainer').classList.remove('con-background');
         }
       })
   }, [categoryId])
   
   return (
-    <div className=' mt-2 itemListContainer '>
+    <div className='  itemListContainer '>
       <p className='fw-bold h2 text-uppercase text-center '>{mensaje}</p>
       <p className='h2   '>{subMensaje}</p>
       
-      <h2 className='tituloItemListContainer mt-5' ><FontAwesomeIcon icon={faBasketShopping} style={{ color: "#FFD43B", fontSize: "30px", padding: "5px" }} />Tú próximo producto esta aquí</h2>
+      <h2 className='tituloItemListContainer mt-5' ><FontAwesomeIcon icon={faBasketShopping} style={{ color: "#FFD43B", fontSize: "30px", padding: "5px", textShadow: "2px 3px 2px rgba(0, 0, 0, 0.6)" }} />Tú próximo producto esta aquí</h2>
       <ItemList productos={productos} />
     </div>
 
