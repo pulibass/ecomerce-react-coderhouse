@@ -35,13 +35,13 @@ function Checkout() {
                 <span class="cantidad">1</span>
                 <button class="sumar-btn">+</button>
               </td>
-              <td>$50000</td>
+              <td>$15000</td>
             </tr>
           </tbody>
           <tfoot>
             <tr>
               <td colspan="3">Total</td>
-              <td id="total">$0</td>
+              <td id="total">$15000</td>
             </tr>
             <tr>
               <td className='contenedorButtonCompra' colspan="4">
