@@ -27,11 +27,11 @@
     color: #FFD43B;
 }
 
-.menu-burger{
+.menu-burger {
     display: none;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     border: none !important
 }
 
@@ -44,18 +44,19 @@
 }
 
 @media screen and (max-width: 991px) {
-   .cart  .menu-burger {
+    .cart .menu-burger {
         display: block;
     }
-.navbar-toggler {
-    border: none !important
-}
 
-.navbar-toggler:focus {
-    box-shadow: none !important
-}
+    .navbar-toggler {
+        border: none !important
+    }
 
-.icono-menu{
-color: #fff;
-}
+    .navbar-toggler:focus {
+        box-shadow: none !important
+    }
+
+    .icono-menu {
+        color: #fff;
+    }
 }

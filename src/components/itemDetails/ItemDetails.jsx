@@ -4,14 +4,15 @@ import Logo from '../../../public/img/logo-completo-dejando-huellas.png';
 import Estrella from '../../../public/img/estrella.png';
 import { faBullhorn, faSyringe } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useState } from 'react';
 import './itemDetails.css';
+import { useCartContext } from '../../context/CartContext';
 
 function ItemDetail({ itemProductos }) {
-    const [cart, setCart] = useState([]);
+    const { addItemProduct } = useCartContext();
 
-    const addToCart = (quantity) => {
-        setCart([...cart, { quantity }]);
+    const addToCart = () => {
+        addItemProduct(itemProductos, 1); // You might want to adjust the quantity here
+        console.log('Producto añadido al carro:', itemProductos);
     };
 
     return (
@@ -41,7 +42,7 @@ function ItemDetail({ itemProductos }) {
                     <FontAwesomeIcon icon={faBullhorn} style={{ color: "#FFD43B", fontSize: "30px" }} />
                     <p>{itemProductos.stock}</p>
                 </div>
-                <ItemCount stock={itemProductos.stock} onAddToCart={addToCart} />
+                <ItemCount stock={itemProductos.stock} itemProductos={itemProductos} />
             </div>
         </div>
     );

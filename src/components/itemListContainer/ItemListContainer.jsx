@@ -8,25 +8,27 @@ import { faBasketShopping } from '@fortawesome/free-solid-svg-icons'
 
 function ItemListContainer({ mensaje, subMensaje }) {
   const [productos, setProductos] = useState([])
+  const [bclass, setBclass] = useState(false)
   const { categoryId } = useParams()
 
   useEffect(() => {
-    fetch("../data/productos.json")
+    fetch("../data/productos.json") 
       .then(response => response.json())
       .then(producto => {
         if (categoryId) {
           const productosCategory = producto.filter(prodCategory => prodCategory.category == categoryId)
           setProductos(productosCategory)
-          document.querySelector('.itemListContainer').classList.add('con-background');
+          setBclass(true);
         } else {
           setProductos(producto)
-          document.querySelector('.itemListContainer').classList.remove('con-background');
+          setBclass(false);
         }
       })
   }, [categoryId])
   
   return (
-    <div className='  itemListContainer '>
+    <div className={`itemListContainer ${bclass ? 'con-background' : ''}`}>
+
       <p className='fw-bold h2 text-uppercase text-center '>{mensaje}</p>
       <p className='h2   '>{subMensaje}</p>
       

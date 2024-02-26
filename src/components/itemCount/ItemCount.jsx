@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import './itemCount.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import { useCartContext } from '../../context/CartContext';
 
-function ItemCount({ stock, onAddToCart }) {
+function ItemCount({ stock, itemProductos }) {
+    const { addItemProduct } = useCartContext()
     const [counterButton, setCounterButton] = useState(1);
 
     const increment = () => {
@@ -19,7 +21,8 @@ function ItemCount({ stock, onAddToCart }) {
     };
 
     const addToCart = () => {
-        onAddToCart(counterButton);
+        console.log("Producto añadido al carro:", itemProductos);
+        addItemProduct(itemProductos, counterButton);
     };
 
     return (

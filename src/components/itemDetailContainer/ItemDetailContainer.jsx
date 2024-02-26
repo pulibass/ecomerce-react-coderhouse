@@ -16,7 +16,7 @@ function ItemDetailContainer() {
     fetch("../data/productos.json")
       .then(response => response.json())
       .then(productos => {
-        const productoId = productos.find(producto => producto.id == productId)
+        const productoId = productos.find(producto => producto.id === productId);
         if (productoId)
           setItemProducto(productoId)
       })

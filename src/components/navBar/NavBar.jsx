@@ -11,8 +11,8 @@ const NavBar = () => {
 
 
     return (
-        <div className="nav-container">
-            <nav className="navbar navbar-expand-lg navbar-light ">
+        <div className="nav-container fixed-top ">
+            <nav className=" navbar navbar-expand-lg navbar-light ">
                 <div className="container-fluid">
                     <div className="logo ">
                         <Link className="text-decoration-none" to={'/'}>
