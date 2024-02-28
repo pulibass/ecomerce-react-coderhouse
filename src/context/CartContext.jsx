@@ -22,7 +22,7 @@ export const CartProv = (props) => {
         } else {
             const itemNew = {
                 ...itemProductos,
-                quantity: cantidad,
+                quantity: cantidad, // Asegúrate de incluir la propiedad quantity aquí
             }
             setCart([...cart, itemNew])
         }
@@ -44,8 +44,15 @@ export const CartProv = (props) => {
         return cart.reduce((acumulador, producto) => acumulador += (producto.quantity * producto.value), 0);
     }
 
+    const addItem = (id, quantityNew) => {
+        const indice = cart.findIndex(producto => producto.id === id)
+        const aux = cart
+        aux[indice].quantity = quantityNew
+        setCart([...aux])
+    }
+
     return (
-        <ContextCart.Provider value={{ cart, addItemProduct, deleteItem, cartDelete, itemQuantityCart, total }}>
+        <ContextCart.Provider value={{ cart, addItemProduct, deleteItem, cartDelete, itemQuantityCart, total, addItem }}>
             {props.children}
         </ContextCart.Provider>
     )

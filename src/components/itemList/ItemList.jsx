@@ -5,9 +5,9 @@ function ItemList({ productos }) {
 
     return (
         <div className='itemList '>
-            {productos.map(producto => (<Item product={producto} />))}
+            {productos.map(producto => (<Item key={producto.id} product={producto} />))}
         </div>
     )
-}
+}   
 
 export default ItemList

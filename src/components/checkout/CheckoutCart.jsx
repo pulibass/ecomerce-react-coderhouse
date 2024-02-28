@@ -1,10 +1,15 @@
 import React from 'react'
 import './checkout.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
+import { faCartShopping, faTrash } from '@fortawesome/free-solid-svg-icons'
 import Envase from '../../../public/img/envase.png'
 import { Link } from 'react-router-dom'
-function Checkout() {
+import { useCartContext } from '../../context/CartContext';
+import ItemChekoutCart from './ItemChekoutCart'
+
+
+function CheckoutCart() {
+  const { cart, total, cartDelete } = useCartContext();
   return (
     <div className="main-cart">
       <div className='tituloChekout'>
@@ -18,39 +23,43 @@ function Checkout() {
           <thead>
             <tr>
               <th>PRODUCTO</th>
-              <th>PRECIO</th>
               <th>CANTIDAD</th>
               <th>SUB TOTAL</th>
+              <th>ELIMINAR</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>
-                <img className='imagenPC'
-                  src={Envase}
-                  alt="imagen"
-                />
-                <span>Apitoxina</span>
-              </td>
-              <td>$15000</td>
-              <td className='btnRestSumCart'>
-                <button class="restar-btn">-</button>
-                <span class="cantidad">1</span>
-                <button class="sumar-btn">+</button>
-              </td>
-              <td>$15000</td>
-            </tr>
+            {
+              cart.length === 0 ?
+                <tr>
+                  <td>
+                    <span>...(Carrito Vacio)</span> agrega productos a tu carro
+                  </td>
+
+                </tr>
+
+                :
+                (
+                  cart.map((producto) => (
+                    <ItemChekoutCart key={producto.id} producto={producto} />
+                  ))
+                )
+
+            }
           </tbody>
           <tfoot>
             <tr>
               <td colspan="3">TOTAL</td>
-              <td id="total">$15000</td>
+              <td id="total">${total()}</td>
             </tr>
             <tr>
-              <td className='contenedorButtonCompra' colspan="4">
+              <td className='contenedorButtonCompra' >
                 <Link className='text-decoration-none' to={'/formulario'}>
-                  <button class="finalizar-btn">Finalizar Compra</button>
+                  <button className="finalizar-btn">Finalizar Compra</button>
                 </Link>
+              </td>
+              <td>
+                <button onClick={cartDelete} className="vaciarCarro-btn">Vaciar Carro</button>
               </td>
             </tr>
           </tfoot>
@@ -60,4 +69,4 @@ function Checkout() {
   )
 }
 
-export default Checkout
+export default CheckoutCart

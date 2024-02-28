@@ -5,7 +5,7 @@ import ItemListContainer from './components/itemListContainer/ItemListContainer'
 import Banner from '../public/img/img-banner.png'
 import ItemDetailContainer from './components/itemDetailContainer/ItemDetailContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Chekout from './components/checkout/Checkout'
+import CheckoutCart from './components/checkout/CheckoutCart'
 import Cart from './components/cart/CartWidget'
 import NotFound from './components/notFound/NotFound'
 import Footer from './components/footer/Footer';
@@ -39,7 +39,7 @@ function App() {
             <Route path='/category/:categoryId' element={<ItemListContainer />} />
             <Route path='/product/:productId' element={<ItemDetailContainer />} />
             <Route path='/cart' element={<Cart />} />
-            <Route path='/checkout' element={<Chekout />} />
+            <Route path='/checkout' element={<CheckoutCart />} />
             <Route path='*' element={<NotFound />} />
             <Route path='/formulario' element={<Formulario />} />
           </Routes>
