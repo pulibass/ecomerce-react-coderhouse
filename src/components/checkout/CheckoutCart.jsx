@@ -2,7 +2,6 @@ import React from 'react'
 import './checkout.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartShopping, faTrash } from '@fortawesome/free-solid-svg-icons'
-import Envase from '../../../public/img/envase.png'
 import { Link } from 'react-router-dom'
 import { useCartContext } from '../../context/CartContext';
 import ItemChekoutCart from './ItemChekoutCart'
@@ -54,9 +53,16 @@ function CheckoutCart() {
             </tr>
             <tr>
               <td className='contenedorButtonCompra' >
-                <Link className='text-decoration-none' to={'/formulario'}>
-                  <button className="finalizar-btn">Finalizar Compra</button>
-                </Link>
+                {
+                  cart.length === 0 ?
+                    <Link className='text-decoration-none' >
+                      <button className="finalizar-btn">Finalizar Compra</button>
+                    </Link>
+                    :
+                    <Link className='text-decoration-none' to={'/formulario'}>
+                      <button className="finalizar-btn">Finalizar Compra</button>
+                    </Link>
+                }
               </td>
               <td>
                 <button onClick={cartDelete} className="vaciarCarro-btn">Vaciar Carro</button>

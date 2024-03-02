@@ -2,7 +2,6 @@ import './styles/App.css';
 import NavBar from './components/navBar/NavBar'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemListContainer from './components/itemListContainer/ItemListContainer';
-import Banner from '../public/img/img-banner.png'
 import ItemDetailContainer from './components/itemDetailContainer/ItemDetailContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CheckoutCart from './components/checkout/CheckoutCart'
@@ -29,7 +28,7 @@ function App() {
                       <p>Apiterapia Dejando Huellas</p>
                     </div>
                     <div className='container-fluid imgBanner'>
-                      <img className='' src={Banner} alt="banner" />
+                      <img className='' src="https://firebasestorage.googleapis.com/v0/b/ecomerce-react-coderhouse.appspot.com/o/img-banner.png?alt=media&token=3bc52a61-2628-482a-ba26-f5d81351a9b7" alt="banner" />
                     </div>
                   </div>
                   <ItemListContainer mensaje={"La primera riqueza es la salud. "} subMensaje={'"Ralph W. Emerson."'} />

@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "image": "../img/envase.png",
+    "image": "https://firebasestorage.googleapis.com/v0/b/ecomerce-react-coderhouse.appspot.com/o/envase.png?alt=media&token=66308f51-5e71-4626-87a1-05fa6d869c9b",
     "name": "Apitoxina",
     "value": 15000,
     "details": "Apitoxina nivel 5",
@@ -11,7 +11,7 @@
   },
   {
     "id": "2",
-    "image": "../img/envase.png",
+    "image": "https://firebasestorage.googleapis.com/v0/b/ecomerce-react-coderhouse.appspot.com/o/envase.png?alt=media&token=66308f51-5e71-4626-87a1-05fa6d869c9b",
     "name": "Apitoxina",
     "value": 13000,
     "details": "Apitoxina nivel 4",
@@ -21,7 +21,7 @@
   },
   {
     "id": "3",
-    "image": "../img/envase.png",
+    "image": "https://firebasestorage.googleapis.com/v0/b/ecomerce-react-coderhouse.appspot.com/o/envase.png?alt=media&token=66308f51-5e71-4626-87a1-05fa6d869c9b",
     "name": "Apitoxina",
     "value": 10000,
     "details": "Apitoxina nivel 3",
@@ -31,7 +31,7 @@
   },
   {
     "id": "4",
-    "image": "../img/cera.png",
+    "image": "https://firebasestorage.googleapis.com/v0/b/ecomerce-react-coderhouse.appspot.com/o/cera.png?alt=media&token=5cda697c-df53-4008-ad7d-464e5a23d9e9",
     "name": "Cera de Abeja",
     "value": 5000,
     "details": "Elimina pequeñas cicatrices, propiedades hidratantes",
@@ -40,7 +40,7 @@
   },
   {
     "id": "5",
-    "image": "../img/miel.png",
+    "image": "https://firebasestorage.googleapis.com/v0/b/ecomerce-react-coderhouse.appspot.com/o/miel.png?alt=media&token=fcc1363d-781d-401f-a50f-c147a07a2df8",
     "name": "Miel Pura",
     "value": 8000,
     "details": "Miel pura de abejas x 500grs",
@@ -49,7 +49,7 @@
   },
   {
     "id": "6",
-    "image": "../img/polen.png",
+    "image": "https://firebasestorage.googleapis.com/v0/b/ecomerce-react-coderhouse.appspot.com/o/polen.png?alt=media&token=79dc5717-9ce5-486c-855e-c1c71825b23a",
     "name": "Polen",
     "value": 18000,
     "details": "Polen en polvo x 300grs",

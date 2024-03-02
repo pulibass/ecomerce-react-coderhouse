@@ -1,11 +1,9 @@
 import React from "react";
 import CartWidget from '../cart/CartWidget';
 import "./navBar.css";
-import Logo from '../../../public/img/logo-dejando-huellas.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import { Link } from "react-router-dom";
-import ItemListContainer from '../itemListContainer/ItemListContainer'
 
 const NavBar = () => {
 
@@ -16,7 +14,7 @@ const NavBar = () => {
                 <div className="container-fluid">
                     <div className="logo ">
                         <Link className="text-decoration-none" to={'/'}>
-                            <img className=" imagen-logo " src={Logo} alt="" />
+                            <img className=" imagen-logo " src="https://firebasestorage.googleapis.com/v0/b/ecomerce-react-coderhouse.appspot.com/o/logo-dejando-huellas.png?alt=media&token=70a8280a-b898-4169-956a-622c83b05323" alt="Logo" />
                         </Link>
                     </div>
 
@@ -47,11 +45,6 @@ const NavBar = () => {
                             <li className="nav-item">
                                 <Link className="text-decoration-none" to={'/category/nutricion-belleza'}>
                                     <button className="nav-link text-light"  >Nutrición y Belleza</button>
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="text-decoration-none" to={'/contacto'}>
-                                    <button className="nav-link text-light"  >Contacto</button>
                                 </Link>
                             </li>
                         </ul>

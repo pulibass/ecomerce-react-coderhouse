@@ -1,8 +1,8 @@
 import React from 'react';
 import { useCartContext } from '../../context/CartContext';
 import useCounterGlobal from '../../hooks/useCounterGlobal';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
-import { faTrash } from '@fortawesome/free-solid-svg-icons'; 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import './checkout.css';
 
 function ItemChekoutCart({ producto }) {
@@ -12,7 +12,7 @@ function ItemChekoutCart({ producto }) {
     return (
         <tr>
             <td>
-                <img className='imagenPC' src={producto.image} alt="imagen" />
+                <img className='imagenPC' src={producto.image} alt="imagen-producto" />
                 <span>{producto.name}</span>
             </td>
             <td className='btnRestSumCart'>

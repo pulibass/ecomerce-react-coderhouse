@@ -1,7 +1,5 @@
 import React from 'react';
 import ItemCount from '../itemCount/ItemCount';
-import Logo from '../../../public/img/logo-completo-dejando-huellas.png';
-import Estrella from '../../../public/img/estrella.png';
 import { faBullhorn, faSyringe } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './itemDetails.css';
@@ -24,9 +22,9 @@ function ItemDetail({ itemProductos }) {
             </div>
             <div className="itemsDetalles">
                 <div className="logo-precio">
-                    <img className='logoItemDetail' src={Logo} alt="" />
+                    <img className='logoItemDetail' src="https://firebasestorage.googleapis.com/v0/b/ecomerce-react-coderhouse.appspot.com/o/logo-completo-dejando-huellas.png?alt=media&token=6edd6f18-2a5c-4308-abd9-30ae52f839e2" alt="Logo" />
                     <div className='precio'>
-                        <img className='estrella' src={Estrella} alt="" />
+                        <img className='estrella' src="https://firebasestorage.googleapis.com/v0/b/ecomerce-react-coderhouse.appspot.com/o/estrella.png?alt=media&token=f4d73ca8-1441-423b-baa9-385e8f6f575e" alt="estrella-icon" />
                         <p>${itemProductos.value}</p>
                     </div>
                 </div>
