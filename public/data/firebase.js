@@ -1,7 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import { getFirestore, getDocs, collection, getDoc, doc } from "firebase/firestore";
-
+import { getFirestore, getDocs, collection, getDoc, doc, deleteDoc, updateDoc } from "firebase/firestore";
 
 const firebaseConfig = {
     apiKey: "AIzaSyCexg9TziKBYx_jNGtISyk9VWTASI3H5_8",
@@ -12,8 +10,6 @@ const firebaseConfig = {
     appId: "1:661527999444:web:a9620deda7c82dca741c41",
     measurementId: "G-S1M5679V87"
 };
-
-
 
 const app = initializeApp(firebaseConfig);
 const dataBase = getFirestore(app)
@@ -30,7 +26,14 @@ export const getProducts = async () => {
 
 export const getProduct = async (id) => {
     const producto = await getDoc(doc(dataBase, "productos", id))
-    const item = { ...producto.data(), id:producto.id}
+    const item = { ...producto.data(), id: producto.id }
     return item
 }
 
+export const deleteProduct = async(id)=>{
+    await deleteDoc(doc(dataBase, "productos", id))
+}
+
+export const updateProduct = async (id, info) => {
+    await updateDoc(doc(dataBase, "productos", id), info)
+}
