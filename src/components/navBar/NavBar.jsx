@@ -43,8 +43,13 @@ const NavBar = () => {
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="text-decoration-none" to={'/category/nutricion-belleza'}>
-                                    <button className="nav-link text-light"  >Nutrición y Belleza</button>
+                                <Link className="text-decoration-none" to={'/category/nutricion'}>
+                                    <button className="nav-link text-light"  >Nutrición</button>
+                                </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="text-decoration-none" to={'/category/belleza'}>
+                                    <button className="nav-link text-light"  >Belleza</button>
                                 </Link>
                             </li>
                         </ul>
