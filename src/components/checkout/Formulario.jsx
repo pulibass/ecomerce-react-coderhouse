@@ -70,7 +70,7 @@ function Formulario() {
                 Swal.fire({
                     position: "center",
                     icon: "success",
-                    title: "Datos cargados correctamente",
+                    title: "Compra realizada exitosamente",
                     html: `
                     <ul style="text-transform: uppercase; text-align: left;">
                     <li><b>Nombre:</b> ${formData.nombre}</li>
@@ -95,7 +95,6 @@ function Formulario() {
                     showConfirmButton: true,
                 });
             });
-
         cartDelete();
     };
 
