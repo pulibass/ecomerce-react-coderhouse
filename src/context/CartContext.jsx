@@ -22,7 +22,7 @@ export const CartProv = (props) => {
         } else {
             const itemNew = {
                 ...itemProductos,
-                quantity: cantidad, // Asegúrate de incluir la propiedad quantity aquí
+                quantity: cantidad, 
             }
             setCart([...cart, itemNew])
         }

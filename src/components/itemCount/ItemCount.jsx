@@ -23,14 +23,23 @@ function ItemCount({ stock, itemProductos }) {
     };
 
     const addToCart = () => {
-        Swal.fire({
-            position: "center",
-            icon: "success",
-            title: "PRODUCTO AÑADIDO AL CARRO",
-            html: `<p><b>${itemProductos.name}</b></p>`,
-            showConfirmButton: true,
-        });
-        addItemProduct(itemProductos, counterButton);
+        if (itemProductos.stock === 0) {
+            Swal.fire({
+                icon: "warning",
+                title: "Atención",
+                text: "Producto sin stock",
+                showConfirmButton: true,
+            })
+        } else {
+            Swal.fire({
+                position: "center",
+                icon: "success",
+                title: "PRODUCTO AÑADIDO AL CARRO",
+                html: `<p><b>${itemProductos.name}</b></p>`,
+                showConfirmButton: true,
+            });
+            addItemProduct(itemProductos, counterButton);
+        }
     };
 
     return (
