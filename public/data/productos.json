@@ -36,7 +36,7 @@
     "value": 5000,
     "details": "Elimina pequeñas cicatrices, propiedades hidratantes",
     "stock": 20,
-    "category": "nutricion-belleza"
+    "category": "belleza"
   },
   {
     "id": "5",
@@ -45,7 +45,7 @@
     "value": 8000,
     "details": "Miel pura de abejas x 500grs",
     "stock": 20,
-    "category": "nutricion-belleza"
+    "category": "nutricion"
   },
   {
     "id": "6",
@@ -54,6 +54,6 @@
     "value": 18000,
     "details": "Polen en polvo x 300grs",
     "stock": 20,
-    "category": "nutricion-belleza"
+    "category": "nutricion"
   }
 ]
