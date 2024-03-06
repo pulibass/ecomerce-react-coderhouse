@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore, getDocs, collection, getDoc, doc, deleteDoc, updateDoc } from "firebase/firestore";
+import { getFirestore, getDocs, collection, getDoc, doc, deleteDoc, updateDoc, addDoc } from "firebase/firestore";
 
 const firebaseConfig = {
     apiKey: "AIzaSyCexg9TziKBYx_jNGtISyk9VWTASI3H5_8",
@@ -30,10 +30,26 @@ export const getProduct = async (id) => {
     return item
 }
 
-export const deleteProduct = async(id)=>{
+export const deleteProduct = async (id) => {
     await deleteDoc(doc(dataBase, "productos", id))
 }
 
 export const updateProduct = async (id, info) => {
     await updateDoc(doc(dataBase, "productos", id), info)
+}
+
+export const ordenCompraCreate = async (cliente, total, cart, fecha) => {
+    const ordenCompra = await addDoc(collection(dataBase, "ordenesCompra"), {
+        cliente: cliente,
+        item: cart,
+        total: total,
+        fecha: fecha,
+    })
+    return ordenCompra
+}
+
+export const getOrdenCompra = async (id) => {
+    const ordenCompra = await getDoc(doc(dataBase, "ordenesCompra", id))
+    const item = { ...ordenCompra.data(), id: ordenCompra.id }
+    return item
 }

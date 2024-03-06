@@ -3,6 +3,8 @@ import './itemCount.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { useCartContext } from '../../context/CartContext';
+import Swal from 'sweetalert2';
+
 
 function ItemCount({ stock, itemProductos }) {
     const { addItemProduct } = useCartContext()
@@ -21,7 +23,13 @@ function ItemCount({ stock, itemProductos }) {
     };
 
     const addToCart = () => {
-        console.log("Producto añadido al carro:", itemProductos);
+        Swal.fire({
+            position: "center",
+            icon: "success",
+            title: "PRODUCTO AÑADIDO AL CARRO",
+            html: `<p><b>${itemProductos.name}</b></p>`,
+            showConfirmButton: true,
+        });
         addItemProduct(itemProductos, counterButton);
     };
 

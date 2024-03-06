@@ -16,9 +16,11 @@ function ItemDetailContainer() {
     getProduct(productId)
       .then(producto => {
         setItemProducto(producto)
-          .catch(error => console.log(error))
       })
-  }, [])
+      .catch(error => {
+        console.log(error);
+      });
+  }, []);
 
 
   return (

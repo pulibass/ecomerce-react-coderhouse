@@ -1,10 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import './formulario.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPaperPlane, faToilet, faUser } from '@fortawesome/free-solid-svg-icons'
+import React, { useState } from 'react';
+import './formulario.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPaperPlane, faToilet, faUser } from '@fortawesome/free-solid-svg-icons';
 import Swal from 'sweetalert2';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useCartContext } from '../../context/CartContext';
+import { getProduct, ordenCompraCreate, updateProduct } from '../../../public/data/firebase';
+
 function Formulario() {
+    const navigate = useNavigate();
+    const { cart, total, cartDelete } = useCartContext();
+
     const [formData, setFormData] = useState({
         nombre: '',
         apellido: '',
@@ -23,11 +29,76 @@ function Formulario() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        SweetAlert();
         clearForm();
         console.log(formData);
 
+        const carro = [...cart];
+
+        carro.forEach(productoCarrito => {
+            getProduct(productoCarrito.id).then(productoDB => {
+                if (productoDB.stock >= productoCarrito.quantity) {
+                    productoDB.stock -= productoCarrito.quantity;
+                    updateProduct(productoDB.id, productoDB);
+                } else {
+                    carro = carro.filter(producto => producto.id !== productoDB.id); // Update the value of carro
+                    Swal.fire({
+                        icon: "warning",
+                        title: "Atención",
+                        text: `No hay stock suficiente para este producto ${productoDB.name}`,
+                        showConfirmButton: true,
+                    });
+                }
+            }).catch(e => {
+                Swal.fire({
+                    icon: "warning",
+                    title: "Atención",
+                    text: `Error al obtener producto: ${e}`,
+                    showConfirmButton: true,
+                });
+            });
+        });
+
+        const cargaProductos = carro.map(producto => ({
+            id: producto.id,
+            quantity: producto.quantity,
+            value: producto.value
+        }));
+
+        ordenCompraCreate(formData.nombre, total(), cargaProductos, new Date().toLocaleDateString("es-AR", { timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone }))
+            .then(ordenCompra => {
+                console.log("Orden de compra:", ordenCompra);
+                Swal.fire({
+                    position: "center",
+                    icon: "success",
+                    title: "Datos cargados correctamente",
+                    html: `
+                    <ul style="text-transform: uppercase; text-align: left;">
+                    <li><b>Nombre:</b> ${formData.nombre}</li>
+                    <li><b>Apellido:</b> ${formData.apellido}</li>
+                    <li><b>DNI:</b> ${formData.dni}</li>
+                    <li><b>Teléfono:</b> ${formData.telefono}</li>
+                    <li><b>Email:</b> ${formData.email}</li>
+                    </ul>
+                    <p>El número de comprobante de su compra es <b>${ordenCompra.id}</b></p>
+                    <p> el total de su compra es <b>$ ${total()}</b></p>`,
+                    footer: `<p><b>¡Gracias por  su compra! vuelva prontos</b></p>`,
+                    showConfirmButton: true,
+                });
+                navigate('/');
+
+            })
+            .catch(e => {
+                Swal.fire({
+                    icon: "warning",
+                    title: "Atención",
+                    text: `Error al crear la orden de compra: ${e}`,
+                    showConfirmButton: true,
+                });
+            });
+
+        cartDelete();
     };
+
     const clearForm = () => {
         setFormData({
             nombre: "",
@@ -36,7 +107,7 @@ function Formulario() {
             telefono: "",
             email: "",
         });
-    }
+    };
 
     const handleLimpiar = () => {
         Swal.fire({
@@ -47,13 +118,7 @@ function Formulario() {
             showCancelButton: true,
         }).then((result) => {
             if (result.isConfirmed) {
-                setFormData({
-                    nombre: "",
-                    apellido: "",
-                    dni: "",
-                    telefono: "",
-                    email: "",
-                });
+                clearForm();
                 Swal.fire("Datos borrados!", "", "success");
             } else {
                 Swal.fire("Operación cancelada", "", "info");
@@ -61,24 +126,8 @@ function Formulario() {
         });
     };
 
-    const SweetAlert = () => {
-        Swal.fire({
-            position: "center",
-            icon: "success",
-            title: "Datos cargados correctamente",
-            html: `<ul style="text-transform: uppercase; text-align: left;">
-            <p><b>Nombre: ${formData.nombre}</b></p> <br /> 
-            <p><b>Apellido: ${formData.apellido}</b></p><br /> 
-            <p><b>DNI: ${formData.dni}</b></p><br />
-            <p><b>Teléfono: ${formData.telefono}</b></p><br />
-            <p><b>Email: ${formData.email}</b></p><br />
-            </ul>
-            `,
-            footer: `<p><b>sus datos han sido almacenados en nuestra base de datos</b></p>`,
-            showConfirmButton: true,
 
-        });
-    }
+
     return (
         <div className='formulario'>
             <div className='tituloFormulario'>
@@ -110,13 +159,13 @@ function Formulario() {
                 <div className="formularioContainer">
                     <form className='formChekout' onSubmit={handleSubmit}>
                         <label>
-                            Nombre: <input type="text" name="nombre" requiredvalue={formData.nombre} onChange={handleChange} />
+                            Nombre: <input type="text" name="nombre" required value={formData.nombre} onChange={handleChange} />
                         </label>
                         <label>
                             Apellido: <input type="text" name="apellido" required value={formData.apellido} onChange={handleChange} />
                         </label>
                         <label>
-                            DNI: <input type="text" name="dni" requiredvalue={formData.dni} onChange={handleChange} />
+                            DNI: <input type="text" name="dni" required value={formData.dni} onChange={handleChange} />
                         </label>
                         <label>
                             Número de teléfono: <input type="text" name="telefono" required value={formData.telefono} onChange={handleChange} />
@@ -130,11 +179,8 @@ function Formulario() {
                         </div>
                     </form>
                 </div>
-
             </div>
-
         </div>
-
     );
 }
 
