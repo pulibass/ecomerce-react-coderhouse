@@ -17,8 +17,13 @@ function ItemChekoutCart({ producto }) {
             </td>
             <td className='btnRestSumCart'>
                 <button className="restar-btn" onClick={async () => {
-                    addItem(producto.id, count - 1);
-                    decrement();
+                    if (count === 1) {
+                        return;
+                    } else {
+                        addItem(producto.id, count - 1);
+                        decrement();
+                    }
+
                 }}>-</button>
                 <span className="cantidad">{count}</span>
                 <button className="sumar-btn" onClick={() => {
