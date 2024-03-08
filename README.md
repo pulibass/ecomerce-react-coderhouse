@@ -1,5 +1,10 @@
 # React + Vite
 
+Proyecto hecho con React + Vite para curso de desarrollo web front end React de CoderHouse!
+se utilizo librerias: Bootrstrap, Fontawesome, SweetAlert.
+
+Conexion a la base de datos a traves de Firebase!
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
